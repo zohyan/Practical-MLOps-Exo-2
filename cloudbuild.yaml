@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'gcr.io/practicalmlops/exercise-one', '.' ]
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/practicalmlops/exercise-one']
+images: ['gcr.io/practicalmlops/exercise-one']
