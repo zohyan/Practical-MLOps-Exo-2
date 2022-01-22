@@ -1,0 +1,5 @@
+steps:
+  # Run make
+  - name: "python:3.8-buster"
+    entrypoint: make
+    args: ['install', 'lint', 'test']
